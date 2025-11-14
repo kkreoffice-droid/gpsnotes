@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="pref_toggle_camera"
+        android:title="Enable Camera"
+        android:defaultValue="true"
+        android:summary="Toggle to capture image or generate note-only record" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_toggle_gps"
+        android:title="Include GPS info"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_toggle_address"
+        android:title="Include Address"
+        android:defaultValue="true"
+        android:summary="Reverse geocode to address (may require network)" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_toggle_datetime"
+        android:title="Include Date & Time"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="pref_note_mode"
+        android:title="Note mode"
+        android:entries="@array/note_mode_entries"
+        android:entryValues="@array/note_mode_values"
+        android:defaultValue="user" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_auto_save"
+        android:title="Auto save after capture"
+        android:defaultValue="true" />
+
+    <Preference
+        android:key="pref_manage_presets"
+        android:title="Manage Presets"
+        android:summary="Add/edit/remove preset notes" />
+
+</PreferenceScreen>
