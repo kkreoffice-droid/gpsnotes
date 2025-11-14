@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GPS Notes</string>
+    <string-array name="note_mode_entries">
+        <item>User input</item>
+        <item>Preset</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="note_mode_values">
+        <item>user</item>
+        <item>preset</item>
+        <item>none</item>
+    </string-array>
+</resources>
